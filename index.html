@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>DEV SESI/SENAI MIDI</title>
+        <link
+            rel="shortcut icon"
+            href="images/bateria.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div id="category-container">
+            <a class="category ativa">General</a>
+            <a href="./pages/animals.html" class="category"
+                >Animals</a
+            >
+            <a href="./pages/instruments.html" class="category"
+                >Instruments</a
+            >
+        </div>
+        <main id="teclado">
+            <button class="tecla tecla_clap">Clap</button>
+            <button class="tecla tecla_horn">Horn</button>
+            <button class="tecla tecla_laugh">Laugh</button>
+            <button class="tecla tecla_metalpipe">...</button>
+        </main>
+
+        <audio src="sounds/clap.mp3" id="som_tecla_clap"></audio>
+        <audio src="sounds/horn.mp3" id="som_tecla_horn"></audio>
+        <audio src="sounds/laugh.mp3" id="som_tecla_laugh"></audio>
+        <audio src="sounds/pipe.mp3" id="som_tecla_metalpipe"></audio>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
